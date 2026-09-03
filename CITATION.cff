@@ -2,11 +2,11 @@ cff-version: 1.2.0
 message: "If you use this artifact, please cite the software artifact and the accompanying paper."
 type: software
 title: "MARLRefine: Study Artifact for Phase-Aware Source-Aligned Conformance Testing"
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-09-03
 license: Apache-2.0
 repository-code: "https://github.com/bagel786/marlrefine-artifact"
-url: "https://github.com/bagel786/marlrefine-artifact/releases/tag/study-v1.0.0"
+url: "https://github.com/bagel786/marlrefine-artifact/releases/tag/study-v1.0.1"
 authors:
   - family-names: Baig
     given-names: Safiullah

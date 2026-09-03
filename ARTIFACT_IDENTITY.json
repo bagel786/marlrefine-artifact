@@ -7,16 +7,16 @@
   },
   "release": {
     "primary_asset": {
-      "filename": "marlrefine-study-results-v1.0.0.tar.gz",
-      "sha256": "ea35bac325fc0fe010c6660157e78f7405672c897759f26dedfa8ee6253b0d16",
-      "size_bytes": 41031144
+      "filename": "marlrefine-study-results-v1.0.1.tar.gz",
+      "sha256": "78d3712acb7ba8ff4c380f284588109bcb12edf882f1551a552bc0d2da331c2c",
+      "size_bytes": 41375102
     },
     "superseded_audit_asset": {
       "filename": "marlrefine-superseded-attempt-1.tar.gz",
       "sha256": "74528e12a302728e2a4adc2b6aa0a40239ab11a67da1bb92c38b2b7de17249bb",
       "size_bytes": 38048968
     },
-    "tag": "study-v1.0.0"
+    "tag": "study-v1.0.1"
   },
   "schema_version": 1,
   "study": {
@@ -24,5 +24,5 @@
     "source_tree_sha256": "c7f1edca01663dd8e918ab02c1f08c3ec901b428a35bfc160db8e1c4f066b1cd",
     "uv_lock_sha256": "3ba28d4b28623ad7394f6b0474b28780ed52dbbf66817a8babd2629a086ce29a"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

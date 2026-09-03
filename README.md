@@ -49,11 +49,15 @@ results archive describe the final state.
 
 ## Results download
 
-Download `marlrefine-study-results-v1.0.0.tar.gz` from the
-[`study-v1.0.0` GitHub Release](https://github.com/bagel786/marlrefine-artifact/releases/tag/study-v1.0.0).
-It contains the complete 840-trace raw ledger, frozen manifests, external
-baseline output, mutation output, manual adjudication, root evidence, frozen
-analysis, and generated result macros.
+Download `marlrefine-study-results-v1.0.1.tar.gz` from the
+[`study-v1.0.1` GitHub Release](https://github.com/bagel786/marlrefine-artifact/releases/tag/study-v1.0.1).
+It contains the complete 840-trace raw ledger, the five frozen discovery
+inputs, frozen manifests, external baseline output, mutation output, manual
+adjudication, root evidence, frozen analysis, and generated result macros.
+
+Version 1.0.1 adds five frozen discovery inputs inadvertently omitted from the
+version 1.0.0 package. The raw study ledger, final evidence, manifests,
+analysis, and reported results are byte-for-byte unchanged.
 
 The separately labeled `marlrefine-superseded-attempt-1.tar.gz` is retained for
 auditability only. Its run was superseded after a serialization inconsistency

@@ -27,7 +27,7 @@ run:
 ```bash
 uv sync --project frozen-source --frozen
 uv run --project frozen-source python verify_artifact.py \
-  --results marlrefine-study-results-v1.0.0
+  --results marlrefine-study-results-v1.0.1
 ```
 
 The verifier checks:

@@ -1,18 +1,22 @@
 # Release assets
 
-## Study artifact v1.0.0
+## Study artifact v1.0.1
 
-Recommended tag: `study-v1.0.0`
+Recommended tag: `study-v1.0.1`
 
-Release page: <https://github.com/bagel786/marlrefine-artifact/releases/tag/study-v1.0.0>
+Release page: <https://github.com/bagel786/marlrefine-artifact/releases/tag/study-v1.0.1>
 
 Primary, manuscript-bearing evidence:
 
 ```text
-ea35bac325fc0fe010c6660157e78f7405672c897759f26dedfa8ee6253b0d16  marlrefine-study-results-v1.0.0.tar.gz
+78d3712acb7ba8ff4c380f284588109bcb12edf882f1551a552bc0d2da331c2c  marlrefine-study-results-v1.0.1.tar.gz
 ```
 
-Size: 41,031,144 bytes.
+Size: 41,375,102 bytes.
+
+Version 1.0.1 adds the five frozen discovery inputs inadvertently omitted from
+the version 1.0.0 package. The raw 840-trace ledger, final evidence, manifests,
+frozen analysis, generated result macros, and reported results are unchanged.
 
 Optional superseded audit evidence:
 
@@ -24,4 +28,4 @@ Size: 38,048,968 bytes.
 
 The superseded archive is not an analysis input and must remain clearly labeled
 as such in the GitHub Release description. `SHA256SUMS`, distributed alongside
-the assets, contains both values.
+the assets, contains both version 1.0.1 values.
