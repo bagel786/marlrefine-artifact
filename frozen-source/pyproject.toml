@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "marlrefine"
+version = "0.1.0"
+description = "Source-aligned conformance testing for multi-agent environment adapters"
+readme = { text = "MARLRefine is a research prototype for source-aligned conformance testing of multi-agent environment adapters with non-bijective traces.", content-type = "text/plain" }
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "numpy==2.5.2",
+    "open-spiel==2.0.2",
+    "pettingzoo==1.27.0",
+    "shimmy==2.0.1",
+]
+
+[project.scripts]
+marlrefine = "marlrefine.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4,<9",
+    "ruff>=0.12,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/marlrefine"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src/marlrefine"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "integration: exercises pinned third-party adapter implementations",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

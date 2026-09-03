@@ -1,0 +1,21 @@
+MARLRefine documentation and data license
+
+Copyright (c) 2026 Safiullah Baig
+
+Unless a file says otherwise, the documentation, study protocol, metadata,
+manifests, and generated research data in this repository are licensed under
+the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You may share and adapt that material for any purpose, provided that you give
+appropriate credit, provide a link to the license, and indicate whether changes
+were made. The full license is available at:
+
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+This grant does not cover software source code, executable scripts, build
+configuration, container recipes, third-party material, trademarks, or any
+file that states a different license. Author-owned MARLRefine software source,
+executable scripts, build configuration, and container recipes are licensed
+under the Apache License 2.0 in `LICENSE`, unless a file states otherwise.
+Third-party materials retain their original terms, and no trademark rights are
+granted.

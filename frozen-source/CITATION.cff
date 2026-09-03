@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use MARLRefine, please cite the archived software artifact and paper."
+type: software
+title: "MARLRefine: Phase-Aware Source-Aligned Conformance Testing for Multi-Agent Environment Adapters"
+version: 0.1.0
+license: Apache-2.0
+authors:
+  - family-names: Baig
+    given-names: Safiullah
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0008-5547-6088"
+abstract: >-
+  A source-aligned conformance-testing prototype for environment adapters whose
+  source and destination APIs expose different interaction schedules.
+keywords:
+  - reinforcement learning
+  - multi-agent systems
+  - conformance testing
+  - differential testing
+  - environment adapters

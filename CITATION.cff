@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the software artifact and the accompanying paper."
+type: software
+title: "MARLRefine: Study Artifact for Phase-Aware Source-Aligned Conformance Testing"
+version: 1.0.0
+date-released: 2026-09-03
+license: Apache-2.0
+repository-code: "https://github.com/bagel786/marlrefine-artifact"
+url: "https://github.com/bagel786/marlrefine-artifact/releases/tag/study-v1.0.0"
+authors:
+  - family-names: Baig
+    given-names: Safiullah
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0008-5547-6088"
+abstract: >-
+  Code, frozen protocol materials, raw evidence, and deterministic analysis for
+  a bounded conformance study of the OpenSpiel 2.0.2 to Shimmy 2.0.1 adapter.
+keywords:
+  - conformance testing
+  - differential testing
+  - multi-agent reinforcement learning
+  - environment adapters
+  - OpenSpiel
+  - Shimmy

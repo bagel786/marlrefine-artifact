@@ -1,0 +1,34 @@
+{
+  "visibility": "public",
+  "creators": [
+    {
+      "affiliation": "Independent Researcher",
+      "name": "Baig, Safiullah",
+      "orcid": "0009-0008-5547-6088"
+    }
+  ],
+  "description": "Prospective protocol, frozen study manifest, eligibility rules, bounded trace schedule, source code, dependency lock, container identity and exact image-archive commitment, and checksums for a non-bijective trace-conformance study of the OpenSpiel-to-Shimmy adapter. This record predates all prospective semantic execution.",
+  "keywords": [
+    "conformance testing",
+    "differential testing",
+    "multi-agent reinforcement learning",
+    "OpenSpiel",
+    "PettingZoo",
+    "Shimmy"
+  ],
+  "licenses": [
+    {
+      "id": "apache-2.0",
+      "scope": "Author-owned software source, executable scripts, build configuration, and container recipes; see LICENSE."
+    },
+    {
+      "id": "cc-by-4.0",
+      "scope": "Documentation, protocol, metadata, manifests, and generated research data; see LICENSE-docs-data."
+    }
+  ],
+  "metadata_kind": "manual_zenodo_ui_checklist_not_api_payload",
+  "notes": "In Zenodo's current license selector, declare both Apache-2.0 and CC-BY-4.0 and retain the file-specific scopes above. No external funding was received. The complete frozen executable/protocol source and the exact Docker image archive's pre-run filename/hash/size/format commitment are included in the deposited protocol archive; no external repository is required to validate the public pre-run commitment. The Docker archive bytes are retained privately for the hash-bound reviewer package instead of rehosting Debian, Python, and third-party binary layers under this record's author-owned file licenses. Use the DOI assigned by Zenodo when the public record is published.",
+  "resource_type": "publication-report",
+  "title": "Phase-Aware Source-Aligned Conformance Testing for Multi-Agent Environment Adapters: Prospective Protocol and Study Manifests, Version 1.1",
+  "version": "1.1"
+}
