@@ -37,6 +37,8 @@ proofs, or 840 statistically independent replications.
 - `REPRODUCING.md` gives the shortest complete verification procedure.
 - `RELEASES.md` identifies the separately uploaded result archives and their
   checksums.
+- `posthoc/` contains a deterministic recovery of descriptive reports that the
+  protocol prespecified but the initial frozen analysis did not render.
 
 The historical Git object named by the evidence is
 `640b1d89174e44fa7a0440f1d4d296e316cc5b41`. Original repository history is
@@ -79,6 +81,21 @@ the first attempt exposed the result for `mut-special-node-kind-02`; its rerun
 inference is therefore post-authorization validation evidence, not untouched
 prospective evidence. The protocol and analysis preserve that chronology
 explicitly.
+
+### Recovered prespecified descriptive reporting
+
+After the primary analysis, an audit found that the manuscript and frozen
+tables had omitted prespecified cross-tabs for secondary registry metadata,
+the single-player subgroup, primary-stratum outcomes, and reached final source
+node kinds. The [`posthoc/`](posthoc/) supplement reconstructs those tables by
+a validated deterministic join of the immutable v1.0.1 inputs. It does not
+change a cohort, trace, outcome, endpoint, finding, or causal adjudication.
+
+The protocol did not freeze an exhaustive classifier for every residual
+“special” or “other nonstandard” game type. The supplement does not invent one
+after observing results; it reports only the categories and reachability fields
+that can be recovered unambiguously and identifies the residual taxonomy as a
+reporting limitation.
 
 ## Licensing
 

@@ -1,0 +1,3880 @@
+{
+  "analysis_status": "post_hoc_recovery_of_omitted_prespecified_descriptive_report",
+  "artifact_type": "marlrefine_recovered_prespecified_secondary_subgroups",
+  "final_source_boundary_kind_reachability": {
+    "counts": {
+      "decision": {
+        "distinct_game_count": 19,
+        "trace_count": 114
+      },
+      "mean_field": {
+        "distinct_game_count": 3,
+        "trace_count": 24
+      },
+      "simultaneous": {
+        "distinct_game_count": 4,
+        "trace_count": 23
+      },
+      "terminal": {
+        "distinct_game_count": 85,
+        "trace_count": 647
+      }
+    },
+    "definition": "Final recorded native source node kind among semantically evaluated traces; trace categories are exclusive and game sets may overlap."
+  },
+  "input_identities": {
+    "frozen_analysis": {
+      "relative_path": "output/frozen_analysis.json",
+      "release_component": "marlrefine-study-results-v1.0.1.tar.gz",
+      "sha256": "663a05a06ee4a1336992eb1017852f6be33ed71aabc325ed19ddab52ba5aefe9"
+    },
+    "manual_adjudication": {
+      "relative_path": "output/manual_adjudication.json",
+      "release_component": "marlrefine-study-results-v1.0.1.tar.gz",
+      "sha256": "474ac6dbf940d147e2ad64c71598793ea90cf51dc92ac378b30a1eba2860a9ae"
+    },
+    "prospective_raw_ledger": {
+      "relative_path": "output/prospective_raw.jsonl",
+      "release_component": "marlrefine-study-results-v1.0.1.tar.gz",
+      "sha256": "b47aeb50ab15fc21418dfeb781e8224c77addaddddcb4b15cd40a2d148fc0ce0"
+    },
+    "protocol": {
+      "relative_path": "frozen-source/docs/protocol.md",
+      "release_component": "tagged GitHub source archive",
+      "sha256": "a828d27f36059d8a5f22f6bdadc244efdc0f7b3ee89936f54a117f4c3195f3c0"
+    },
+    "registry_census": {
+      "relative_path": "artifacts/registry_census.json",
+      "release_component": "marlrefine-study-results-v1.0.1.tar.gz",
+      "sha256": "5fba0a4cf82e7a06a34a686ce263fb1accc53a35651dddc729b7ea8c0bf122ed"
+    },
+    "study_manifest": {
+      "relative_path": "manifests/study_v1_draft.json",
+      "release_component": "marlrefine-study-results-v1.0.1.tar.gz",
+      "sha256": "02e01818bfa8f6ec2bbebcc8a679dd0968d6c058097e9f607cdd378871e76075"
+    }
+  },
+  "measurement_notes": {
+    "causal_roots": "Joined from the hashed final manual adjudication by exact case_id and violation_index; not inferred from census metadata or violation names.",
+    "finding_incidence": "Counts at least one non-diagnostic semantic violation in a trace or game; it is not a distinct-defect count.",
+    "inference": "No hypothesis tests, confidence intervals, or multiplicity-sensitive subgroup claims are introduced.",
+    "overlap": "Secondary dimensions overlap and are descriptive; categories within each dimension partition the cohort, but categories across dimensions are not independent.",
+    "unresolved_nonstandard_taxonomy": "No frozen exhaustive classifier defines special-node or other nonstandard game types. The report does not create one after observing results."
+  },
+  "primary_registry_strata": {
+    "definition": "Five mutually exclusive strata derived from census dynamics and chance_mode exactly as frozen: sequential/simultaneous crossed with deterministic/stochastic, plus mean_field.",
+    "strata": {
+      "mean_field": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 3,
+            "finding_occurrence_count": 136,
+            "trace_count": 24
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 24,
+          "terminal_complete": 0,
+          "unalignable": 0
+        },
+        "game_count": 3,
+        "game_names": [
+          "mfg_crowd_modelling_2d",
+          "mfg_dynamic_routing",
+          "mfg_garnet"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 3,
+          "finding_occurrence_count": 136,
+          "game_denominator": 3,
+          "trace_count": 24,
+          "trace_denominator": 24
+        },
+        "primary_status_counts": {
+          "fail": 24,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 24,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 0,
+          "observed_failure": 24
+        }
+      },
+      "sequential__deterministic": {
+        "adjudicated_causal_root_incidence": {
+          "reward-accounting-replay": {
+            "distinct_game_count": 38,
+            "finding_occurrence_count": 699,
+            "trace_count": 233
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 13,
+            "finding_occurrence_count": 110,
+            "trace_count": 55
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 10,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 326,
+          "unalignable": 0
+        },
+        "game_count": 42,
+        "game_names": [
+          "amazons",
+          "antichess",
+          "battleship",
+          "breakthrough",
+          "checkers",
+          "chess",
+          "chinese_checkers",
+          "cliff_walking",
+          "clobber",
+          "connect_four",
+          "crazyhouse",
+          "cursor_go",
+          "dark_chess",
+          "dark_hex",
+          "dark_hex_ir",
+          "deep_sea",
+          "dots_and_boxes",
+          "gomoku",
+          "havannah",
+          "hex",
+          "hive",
+          "kriegspiel",
+          "latent_ttt",
+          "lines_of_action",
+          "mancala",
+          "mnk",
+          "morpion_solitaire",
+          "nine_mens_morris",
+          "othello",
+          "oware",
+          "pentago",
+          "phantom_go",
+          "phantom_ttt",
+          "phantom_ttt_ir",
+          "quoridor",
+          "rbc",
+          "sheriff",
+          "shogi",
+          "twixt",
+          "ultimate_tic_tac_toe",
+          "xiangqi",
+          "y"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 40,
+          "finding_occurrence_count": 809,
+          "game_denominator": 42,
+          "trace_count": 266,
+          "trace_denominator": 336
+        },
+        "primary_status_counts": {
+          "fail": 266,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 70,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 336,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 70,
+          "no_verdict": 0,
+          "observed_failure": 266
+        }
+      },
+      "sequential__stochastic": {
+        "adjudicated_causal_root_incidence": {
+          "reward-accounting-replay": {
+            "distinct_game_count": 21,
+            "finding_occurrence_count": 601,
+            "trace_count": 136
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 34,
+            "finding_occurrence_count": 601,
+            "trace_count": 241
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 32,
+          "infrastructure": 0,
+          "semantic_abort": 104,
+          "terminal_complete": 200,
+          "unalignable": 0
+        },
+        "game_count": 42,
+        "game_names": [
+          "2048",
+          "backgammon",
+          "banqi",
+          "bargaining",
+          "blackjack",
+          "bridge",
+          "bridge_uncontested_bidding",
+          "catch",
+          "coin_game",
+          "colored_trails",
+          "coordinated_mp",
+          "crazy_eights",
+          "cribbage",
+          "dou_dizhu",
+          "einstein_wurfelt_nicht",
+          "euchre",
+          "first_sealed_auction",
+          "gin_rummy",
+          "go_fish",
+          "hanabi",
+          "hearts",
+          "leduc_poker",
+          "lewis_signaling",
+          "liars_dice",
+          "liars_dice_ir",
+          "maedn",
+          "negotiation",
+          "oh_hell",
+          "pig",
+          "repeated_leduc_poker",
+          "skat",
+          "social_deduction",
+          "solitaire",
+          "spades",
+          "stones_and_gems",
+          "tarok",
+          "tiny_bridge_2p",
+          "tiny_bridge_4p",
+          "tiny_hanabi",
+          "trade_comm",
+          "universal_poker",
+          "yacht"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 38,
+          "finding_occurrence_count": 1202,
+          "game_denominator": 42,
+          "trace_count": 298,
+          "trace_denominator": 336
+        },
+        "primary_status_counts": {
+          "fail": 298,
+          "inapplicable": 32,
+          "infrastructure": 0,
+          "pass": 6,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 336,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 6,
+          "no_verdict": 32,
+          "observed_failure": 298
+        }
+      },
+      "simultaneous__deterministic": {
+        "adjudicated_causal_root_incidence": {
+          "reward-accounting-replay": {
+            "distinct_game_count": 11,
+            "finding_occurrence_count": 199,
+            "trace_count": 61
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 12,
+            "finding_occurrence_count": 178,
+            "trace_count": 89
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 96,
+          "unalignable": 0
+        },
+        "game_count": 12,
+        "game_names": [
+          "blotto",
+          "matching_pennies_3p",
+          "matrix_bos",
+          "matrix_brps",
+          "matrix_cd",
+          "matrix_coordination",
+          "matrix_mp",
+          "matrix_pd",
+          "matrix_rpsw",
+          "matrix_sh",
+          "matrix_shapleys_game",
+          "oshi_zumo"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 12,
+          "finding_occurrence_count": 377,
+          "game_denominator": 12,
+          "trace_count": 95,
+          "trace_denominator": 96
+        },
+        "primary_status_counts": {
+          "fail": 95,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 1,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 96,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 1,
+          "no_verdict": 0,
+          "observed_failure": 95
+        }
+      },
+      "simultaneous__stochastic": {
+        "adjudicated_causal_root_incidence": {
+          "reward-accounting-replay": {
+            "distinct_game_count": 3,
+            "finding_occurrence_count": 84,
+            "trace_count": 16
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 6,
+            "finding_occurrence_count": 129,
+            "trace_count": 35
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 23,
+          "terminal_complete": 25,
+          "unalignable": 0
+        },
+        "game_count": 6,
+        "game_names": [
+          "capture_the_flag",
+          "goofspiel",
+          "laser_tag",
+          "markov_soccer",
+          "pathfinding",
+          "snake"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 6,
+          "finding_occurrence_count": 213,
+          "game_denominator": 6,
+          "trace_count": 35,
+          "trace_denominator": 48
+        },
+        "primary_status_counts": {
+          "fail": 35,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 13,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 48,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 13,
+          "no_verdict": 0,
+          "observed_failure": 35
+        }
+      }
+    }
+  },
+  "schema_version": 1,
+  "secondary_tag_reports": {
+    "declared_chance_mode": {
+      "categories": {
+        "deterministic": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 49,
+              "finding_occurrence_count": 898,
+              "trace_count": 294
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 25,
+              "finding_occurrence_count": 288,
+              "trace_count": 144
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 10,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "semantic_abort": 0,
+            "terminal_complete": 422,
+            "unalignable": 0
+          },
+          "game_count": 54,
+          "game_names": [
+            "amazons",
+            "antichess",
+            "battleship",
+            "blotto",
+            "breakthrough",
+            "checkers",
+            "chess",
+            "chinese_checkers",
+            "cliff_walking",
+            "clobber",
+            "connect_four",
+            "crazyhouse",
+            "cursor_go",
+            "dark_chess",
+            "dark_hex",
+            "dark_hex_ir",
+            "deep_sea",
+            "dots_and_boxes",
+            "gomoku",
+            "havannah",
+            "hex",
+            "hive",
+            "kriegspiel",
+            "latent_ttt",
+            "lines_of_action",
+            "mancala",
+            "matching_pennies_3p",
+            "matrix_bos",
+            "matrix_brps",
+            "matrix_cd",
+            "matrix_coordination",
+            "matrix_mp",
+            "matrix_pd",
+            "matrix_rpsw",
+            "matrix_sh",
+            "matrix_shapleys_game",
+            "mnk",
+            "morpion_solitaire",
+            "nine_mens_morris",
+            "oshi_zumo",
+            "othello",
+            "oware",
+            "pentago",
+            "phantom_go",
+            "phantom_ttt",
+            "phantom_ttt_ir",
+            "quoridor",
+            "rbc",
+            "sheriff",
+            "shogi",
+            "twixt",
+            "ultimate_tic_tac_toe",
+            "xiangqi",
+            "y"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 52,
+            "finding_occurrence_count": 1186,
+            "game_denominator": 54,
+            "trace_count": 361,
+            "trace_denominator": 432
+          },
+          "primary_status_counts": {
+            "fail": 361,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "pass": 71,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 432,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 71,
+            "no_verdict": 0,
+            "observed_failure": 361
+          }
+        },
+        "explicit_stochastic": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 24,
+              "finding_occurrence_count": 685,
+              "trace_count": 152
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 40,
+              "finding_occurrence_count": 730,
+              "trace_count": 276
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "semantic_abort": 151,
+            "terminal_complete": 225,
+            "unalignable": 0
+          },
+          "game_count": 47,
+          "game_names": [
+            "2048",
+            "backgammon",
+            "banqi",
+            "bargaining",
+            "blackjack",
+            "bridge",
+            "capture_the_flag",
+            "catch",
+            "coin_game",
+            "colored_trails",
+            "coordinated_mp",
+            "crazy_eights",
+            "cribbage",
+            "dou_dizhu",
+            "einstein_wurfelt_nicht",
+            "euchre",
+            "first_sealed_auction",
+            "gin_rummy",
+            "go_fish",
+            "goofspiel",
+            "hanabi",
+            "hearts",
+            "laser_tag",
+            "leduc_poker",
+            "lewis_signaling",
+            "liars_dice",
+            "liars_dice_ir",
+            "maedn",
+            "markov_soccer",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "oh_hell",
+            "pathfinding",
+            "pig",
+            "repeated_leduc_poker",
+            "skat",
+            "snake",
+            "social_deduction",
+            "solitaire",
+            "spades",
+            "tiny_bridge_2p",
+            "tiny_bridge_4p",
+            "tiny_hanabi",
+            "trade_comm",
+            "universal_poker",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 47,
+            "finding_occurrence_count": 1551,
+            "game_denominator": 47,
+            "trace_count": 357,
+            "trace_denominator": 376
+          },
+          "primary_status_counts": {
+            "fail": 357,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "pass": 19,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 376,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 19,
+            "no_verdict": 0,
+            "observed_failure": 357
+          }
+        },
+        "sampled_stochastic": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 32,
+            "infrastructure": 0,
+            "semantic_abort": 0,
+            "terminal_complete": 0,
+            "unalignable": 0
+          },
+          "game_count": 4,
+          "game_names": [
+            "bridge_uncontested_bidding",
+            "negotiation",
+            "stones_and_gems",
+            "tarok"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "game_denominator": 4,
+            "trace_count": 0,
+            "trace_denominator": 32
+          },
+          "primary_status_counts": {
+            "fail": 0,
+            "inapplicable": 32,
+            "infrastructure": 0,
+            "pass": 0,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 32,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 0,
+            "no_verdict": 32,
+            "observed_failure": 0
+          }
+        }
+      },
+      "definition": "Census chance_mode retained as a prespecified secondary tag: deterministic, explicit stochastic, or sampled stochastic."
+    },
+    "declared_information_type": {
+      "categories": {
+        "imperfect_information": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 26,
+              "finding_occurrence_count": 691,
+              "trace_count": 166
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 31,
+              "finding_occurrence_count": 556,
+              "trace_count": 205
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 24,
+            "infrastructure": 0,
+            "semantic_abort": 97,
+            "terminal_complete": 239,
+            "unalignable": 0
+          },
+          "game_count": 45,
+          "game_names": [
+            "bargaining",
+            "battleship",
+            "blackjack",
+            "bridge",
+            "bridge_uncontested_bidding",
+            "coin_game",
+            "colored_trails",
+            "coordinated_mp",
+            "crazy_eights",
+            "cribbage",
+            "dark_chess",
+            "dark_hex",
+            "dark_hex_ir",
+            "deep_sea",
+            "dou_dizhu",
+            "euchre",
+            "first_sealed_auction",
+            "gin_rummy",
+            "go_fish",
+            "hanabi",
+            "hearts",
+            "kriegspiel",
+            "latent_ttt",
+            "leduc_poker",
+            "lewis_signaling",
+            "liars_dice",
+            "liars_dice_ir",
+            "negotiation",
+            "oh_hell",
+            "phantom_go",
+            "phantom_ttt",
+            "phantom_ttt_ir",
+            "rbc",
+            "repeated_leduc_poker",
+            "sheriff",
+            "skat",
+            "social_deduction",
+            "solitaire",
+            "spades",
+            "tarok",
+            "tiny_bridge_2p",
+            "tiny_bridge_4p",
+            "tiny_hanabi",
+            "trade_comm",
+            "universal_poker"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 42,
+            "finding_occurrence_count": 1247,
+            "game_denominator": 45,
+            "trace_count": 314,
+            "trace_denominator": 360
+          },
+          "primary_status_counts": {
+            "fail": 314,
+            "inapplicable": 24,
+            "infrastructure": 0,
+            "pass": 22,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 360,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 22,
+            "no_verdict": 24,
+            "observed_failure": 314
+          }
+        },
+        "one_shot": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 10,
+              "finding_occurrence_count": 181,
+              "trace_count": 55
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 11,
+              "finding_occurrence_count": 176,
+              "trace_count": 88
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "semantic_abort": 0,
+            "terminal_complete": 88,
+            "unalignable": 0
+          },
+          "game_count": 11,
+          "game_names": [
+            "blotto",
+            "matching_pennies_3p",
+            "matrix_bos",
+            "matrix_brps",
+            "matrix_cd",
+            "matrix_coordination",
+            "matrix_mp",
+            "matrix_pd",
+            "matrix_rpsw",
+            "matrix_sh",
+            "matrix_shapleys_game"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 11,
+            "finding_occurrence_count": 357,
+            "game_denominator": 11,
+            "trace_count": 88,
+            "trace_denominator": 88
+          },
+          "primary_status_counts": {
+            "fail": 88,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "pass": 0,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 88,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 0,
+            "no_verdict": 0,
+            "observed_failure": 88
+          }
+        },
+        "perfect_information": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 37,
+              "finding_occurrence_count": 711,
+              "trace_count": 225
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 23,
+              "finding_occurrence_count": 286,
+              "trace_count": 127
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 10,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "semantic_abort": 54,
+            "terminal_complete": 320,
+            "unalignable": 0
+          },
+          "game_count": 49,
+          "game_names": [
+            "2048",
+            "amazons",
+            "antichess",
+            "backgammon",
+            "banqi",
+            "breakthrough",
+            "capture_the_flag",
+            "catch",
+            "checkers",
+            "chess",
+            "chinese_checkers",
+            "cliff_walking",
+            "clobber",
+            "connect_four",
+            "crazyhouse",
+            "cursor_go",
+            "dots_and_boxes",
+            "einstein_wurfelt_nicht",
+            "gomoku",
+            "goofspiel",
+            "havannah",
+            "hex",
+            "hive",
+            "laser_tag",
+            "lines_of_action",
+            "maedn",
+            "mancala",
+            "markov_soccer",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "mnk",
+            "morpion_solitaire",
+            "nine_mens_morris",
+            "oshi_zumo",
+            "othello",
+            "oware",
+            "pathfinding",
+            "pentago",
+            "pig",
+            "quoridor",
+            "shogi",
+            "snake",
+            "stones_and_gems",
+            "twixt",
+            "ultimate_tic_tac_toe",
+            "xiangqi",
+            "y",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 46,
+            "finding_occurrence_count": 1133,
+            "game_denominator": 49,
+            "trace_count": 316,
+            "trace_denominator": 392
+          },
+          "primary_status_counts": {
+            "fail": 316,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "pass": 68,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 392,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 68,
+            "no_verdict": 8,
+            "observed_failure": 316
+          }
+        }
+      },
+      "definition": "OpenSpiel registry information classification recorded in the census."
+    },
+    "declared_observation_information_state_pair": {
+      "categories": {
+        "observation=false|information_state=true": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 4,
+              "finding_occurrence_count": 100,
+              "trace_count": 28
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 4,
+              "finding_occurrence_count": 54,
+              "trace_count": 18
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "semantic_abort": 9,
+            "terminal_complete": 31,
+            "unalignable": 0
+          },
+          "game_count": 7,
+          "game_names": [
+            "bridge_uncontested_bidding",
+            "hearts",
+            "liars_dice_ir",
+            "oh_hell",
+            "phantom_ttt_ir",
+            "sheriff",
+            "tarok"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 5,
+            "finding_occurrence_count": 154,
+            "game_denominator": 7,
+            "trace_count": 38,
+            "trace_denominator": 56
+          },
+          "primary_status_counts": {
+            "fail": 38,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "pass": 2,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 56,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 2,
+            "no_verdict": 16,
+            "observed_failure": 38
+          }
+        },
+        "observation=true|information_state=false": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 19,
+              "finding_occurrence_count": 444,
+              "trace_count": 117
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 21,
+              "finding_occurrence_count": 329,
+              "trace_count": 149
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 8,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "semantic_abort": 45,
+            "terminal_complete": 187,
+            "unalignable": 0
+          },
+          "game_count": 32,
+          "game_names": [
+            "2048",
+            "backgammon",
+            "banqi",
+            "breakthrough",
+            "capture_the_flag",
+            "catch",
+            "chinese_checkers",
+            "coin_game",
+            "crazy_eights",
+            "dark_chess",
+            "deep_sea",
+            "dou_dizhu",
+            "einstein_wurfelt_nicht",
+            "gin_rummy",
+            "hanabi",
+            "laser_tag",
+            "lines_of_action",
+            "maedn",
+            "mancala",
+            "markov_soccer",
+            "morpion_solitaire",
+            "negotiation",
+            "oware",
+            "pathfinding",
+            "phantom_go",
+            "pig",
+            "rbc",
+            "skat",
+            "snake",
+            "spades",
+            "stones_and_gems",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 28,
+            "finding_occurrence_count": 773,
+            "game_denominator": 32,
+            "trace_count": 199,
+            "trace_denominator": 256
+          },
+          "primary_status_counts": {
+            "fail": 199,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "pass": 41,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 256,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 41,
+            "no_verdict": 16,
+            "observed_failure": 199
+          }
+        },
+        "observation=true|information_state=true": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 50,
+              "finding_occurrence_count": 1039,
+              "trace_count": 301
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 40,
+              "finding_occurrence_count": 635,
+              "trace_count": 253
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 2,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "semantic_abort": 97,
+            "terminal_complete": 429,
+            "unalignable": 0
+          },
+          "game_count": 66,
+          "game_names": [
+            "amazons",
+            "antichess",
+            "bargaining",
+            "battleship",
+            "blackjack",
+            "blotto",
+            "bridge",
+            "checkers",
+            "chess",
+            "cliff_walking",
+            "clobber",
+            "colored_trails",
+            "connect_four",
+            "coordinated_mp",
+            "crazyhouse",
+            "cribbage",
+            "cursor_go",
+            "dark_hex",
+            "dark_hex_ir",
+            "dots_and_boxes",
+            "euchre",
+            "first_sealed_auction",
+            "go_fish",
+            "gomoku",
+            "goofspiel",
+            "havannah",
+            "hex",
+            "hive",
+            "kriegspiel",
+            "latent_ttt",
+            "leduc_poker",
+            "lewis_signaling",
+            "liars_dice",
+            "matching_pennies_3p",
+            "matrix_bos",
+            "matrix_brps",
+            "matrix_cd",
+            "matrix_coordination",
+            "matrix_mp",
+            "matrix_pd",
+            "matrix_rpsw",
+            "matrix_sh",
+            "matrix_shapleys_game",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "mnk",
+            "nine_mens_morris",
+            "oshi_zumo",
+            "othello",
+            "pentago",
+            "phantom_ttt",
+            "quoridor",
+            "repeated_leduc_poker",
+            "shogi",
+            "social_deduction",
+            "solitaire",
+            "tiny_bridge_2p",
+            "tiny_bridge_4p",
+            "tiny_hanabi",
+            "trade_comm",
+            "twixt",
+            "ultimate_tic_tac_toe",
+            "universal_poker",
+            "xiangqi",
+            "y"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 66,
+            "finding_occurrence_count": 1810,
+            "game_denominator": 66,
+            "trace_count": 481,
+            "trace_denominator": 528
+          },
+          "primary_status_counts": {
+            "fail": 481,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "pass": 47,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 528,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 47,
+            "no_verdict": 0,
+            "observed_failure": 481
+          }
+        }
+      },
+      "definition": "Joint view of the two declared tensor capabilities; this is descriptive metadata, not evidence that every trace exercised both interfaces."
+    },
+    "declared_reward_timing": {
+      "categories": {
+        "intermediate_rewards_allowed": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 99,
+              "trace_count": 21
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 8,
+              "finding_occurrence_count": 110,
+              "trace_count": 51
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "semantic_abort": 32,
+            "terminal_complete": 64,
+            "unalignable": 0
+          },
+          "game_count": 13,
+          "game_names": [
+            "2048",
+            "cliff_walking",
+            "cribbage",
+            "deep_sea",
+            "hanabi",
+            "laser_tag",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "morpion_solitaire",
+            "pathfinding",
+            "solitaire",
+            "stones_and_gems"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 11,
+            "finding_occurrence_count": 345,
+            "game_denominator": 13,
+            "trace_count": 75,
+            "trace_denominator": 104
+          },
+          "primary_status_counts": {
+            "fail": 75,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "pass": 21,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 104,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 21,
+            "no_verdict": 8,
+            "observed_failure": 75
+          }
+        },
+        "terminal_only": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 70,
+              "finding_occurrence_count": 1484,
+              "trace_count": 425
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 57,
+              "finding_occurrence_count": 908,
+              "trace_count": 369
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 10,
+            "inapplicable": 24,
+            "infrastructure": 0,
+            "semantic_abort": 119,
+            "terminal_complete": 583,
+            "unalignable": 0
+          },
+          "game_count": 92,
+          "game_names": [
+            "amazons",
+            "antichess",
+            "backgammon",
+            "banqi",
+            "bargaining",
+            "battleship",
+            "blackjack",
+            "blotto",
+            "breakthrough",
+            "bridge",
+            "bridge_uncontested_bidding",
+            "capture_the_flag",
+            "catch",
+            "checkers",
+            "chess",
+            "chinese_checkers",
+            "clobber",
+            "coin_game",
+            "colored_trails",
+            "connect_four",
+            "coordinated_mp",
+            "crazy_eights",
+            "crazyhouse",
+            "cursor_go",
+            "dark_chess",
+            "dark_hex",
+            "dark_hex_ir",
+            "dots_and_boxes",
+            "dou_dizhu",
+            "einstein_wurfelt_nicht",
+            "euchre",
+            "first_sealed_auction",
+            "gin_rummy",
+            "go_fish",
+            "gomoku",
+            "goofspiel",
+            "havannah",
+            "hearts",
+            "hex",
+            "hive",
+            "kriegspiel",
+            "latent_ttt",
+            "leduc_poker",
+            "lewis_signaling",
+            "liars_dice",
+            "liars_dice_ir",
+            "lines_of_action",
+            "maedn",
+            "mancala",
+            "markov_soccer",
+            "matching_pennies_3p",
+            "matrix_bos",
+            "matrix_brps",
+            "matrix_cd",
+            "matrix_coordination",
+            "matrix_mp",
+            "matrix_pd",
+            "matrix_rpsw",
+            "matrix_sh",
+            "matrix_shapleys_game",
+            "mnk",
+            "negotiation",
+            "nine_mens_morris",
+            "oh_hell",
+            "oshi_zumo",
+            "othello",
+            "oware",
+            "pentago",
+            "phantom_go",
+            "phantom_ttt",
+            "phantom_ttt_ir",
+            "pig",
+            "quoridor",
+            "rbc",
+            "repeated_leduc_poker",
+            "sheriff",
+            "shogi",
+            "skat",
+            "snake",
+            "social_deduction",
+            "spades",
+            "tarok",
+            "tiny_bridge_2p",
+            "tiny_bridge_4p",
+            "tiny_hanabi",
+            "trade_comm",
+            "twixt",
+            "ultimate_tic_tac_toe",
+            "universal_poker",
+            "xiangqi",
+            "y",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 88,
+            "finding_occurrence_count": 2392,
+            "game_denominator": 92,
+            "trace_count": 643,
+            "trace_denominator": 736
+          },
+          "primary_status_counts": {
+            "fail": 643,
+            "inapplicable": 24,
+            "infrastructure": 0,
+            "pass": 69,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 736,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 69,
+            "no_verdict": 24,
+            "observed_failure": 643
+          }
+        }
+      },
+      "definition": "Census reward_model: terminal means terminal-only; rewards permits intermediate rewards but does not prove a nonterminal reward occurred in a sampled trace."
+    },
+    "declared_utility_type": {
+      "categories": {
+        "general_sum": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 13,
+              "finding_occurrence_count": 424,
+              "trace_count": 83
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 29,
+              "finding_occurrence_count": 520,
+              "trace_count": 202
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 24,
+            "infrastructure": 0,
+            "semantic_abort": 94,
+            "terminal_complete": 170,
+            "unalignable": 0
+          },
+          "game_count": 36,
+          "game_names": [
+            "2048",
+            "bargaining",
+            "battleship",
+            "blackjack",
+            "catch",
+            "cliff_walking",
+            "coin_game",
+            "colored_trails",
+            "crazy_eights",
+            "cribbage",
+            "deep_sea",
+            "first_sealed_auction",
+            "hearts",
+            "laser_tag",
+            "lewis_signaling",
+            "matching_pennies_3p",
+            "matrix_bos",
+            "matrix_cd",
+            "matrix_pd",
+            "matrix_sh",
+            "matrix_shapleys_game",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "morpion_solitaire",
+            "negotiation",
+            "oh_hell",
+            "pathfinding",
+            "sheriff",
+            "snake",
+            "social_deduction",
+            "solitaire",
+            "spades",
+            "stones_and_gems",
+            "tarok",
+            "trade_comm"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 32,
+            "finding_occurrence_count": 1080,
+            "game_denominator": 36,
+            "trace_count": 235,
+            "trace_denominator": 288
+          },
+          "primary_status_counts": {
+            "fail": 235,
+            "inapplicable": 24,
+            "infrastructure": 0,
+            "pass": 29,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 288,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 29,
+            "no_verdict": 24,
+            "observed_failure": 235
+          }
+        },
+        "identical": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 51,
+              "trace_count": 17
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 56,
+              "trace_count": 24
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "semantic_abort": 8,
+            "terminal_complete": 24,
+            "unalignable": 0
+          },
+          "game_count": 5,
+          "game_names": [
+            "bridge_uncontested_bidding",
+            "hanabi",
+            "matrix_coordination",
+            "tiny_bridge_2p",
+            "tiny_hanabi"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 4,
+            "finding_occurrence_count": 107,
+            "game_denominator": 5,
+            "trace_count": 31,
+            "trace_denominator": 40
+          },
+          "primary_status_counts": {
+            "fail": 31,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "pass": 1,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 40,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 1,
+            "no_verdict": 8,
+            "observed_failure": 31
+          }
+        },
+        "zero_sum": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 57,
+              "finding_occurrence_count": 1108,
+              "trace_count": 346
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 33,
+              "finding_occurrence_count": 442,
+              "trace_count": 194
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 10,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "semantic_abort": 49,
+            "terminal_complete": 453,
+            "unalignable": 0
+          },
+          "game_count": 64,
+          "game_names": [
+            "amazons",
+            "antichess",
+            "backgammon",
+            "banqi",
+            "blotto",
+            "breakthrough",
+            "bridge",
+            "capture_the_flag",
+            "checkers",
+            "chess",
+            "chinese_checkers",
+            "clobber",
+            "connect_four",
+            "coordinated_mp",
+            "crazyhouse",
+            "cursor_go",
+            "dark_chess",
+            "dark_hex",
+            "dark_hex_ir",
+            "dots_and_boxes",
+            "dou_dizhu",
+            "einstein_wurfelt_nicht",
+            "euchre",
+            "gin_rummy",
+            "go_fish",
+            "gomoku",
+            "goofspiel",
+            "havannah",
+            "hex",
+            "hive",
+            "kriegspiel",
+            "latent_ttt",
+            "leduc_poker",
+            "liars_dice",
+            "liars_dice_ir",
+            "lines_of_action",
+            "maedn",
+            "mancala",
+            "markov_soccer",
+            "matrix_brps",
+            "matrix_mp",
+            "matrix_rpsw",
+            "mnk",
+            "nine_mens_morris",
+            "oshi_zumo",
+            "othello",
+            "oware",
+            "pentago",
+            "phantom_go",
+            "phantom_ttt",
+            "phantom_ttt_ir",
+            "pig",
+            "quoridor",
+            "rbc",
+            "repeated_leduc_poker",
+            "shogi",
+            "skat",
+            "tiny_bridge_4p",
+            "twixt",
+            "ultimate_tic_tac_toe",
+            "universal_poker",
+            "xiangqi",
+            "y",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 63,
+            "finding_occurrence_count": 1550,
+            "game_denominator": 64,
+            "trace_count": 452,
+            "trace_denominator": 512
+          },
+          "primary_status_counts": {
+            "fail": 452,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "pass": 60,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 512,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 60,
+            "no_verdict": 0,
+            "observed_failure": 452
+          }
+        }
+      },
+      "definition": "OpenSpiel registry utility classification recorded in the census."
+    },
+    "effective_num_players": {
+      "categories": {
+        "1": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 7,
+              "finding_occurrence_count": 78,
+              "trace_count": 43
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "semantic_abort": 24,
+            "terminal_complete": 64,
+            "unalignable": 0
+          },
+          "game_count": 12,
+          "game_names": [
+            "2048",
+            "blackjack",
+            "catch",
+            "cliff_walking",
+            "deep_sea",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "morpion_solitaire",
+            "pathfinding",
+            "solitaire",
+            "stones_and_gems"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 10,
+            "finding_occurrence_count": 214,
+            "game_denominator": 12,
+            "trace_count": 67,
+            "trace_denominator": 96
+          },
+          "primary_status_counts": {
+            "fail": 67,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "pass": 21,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 96,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 21,
+            "no_verdict": 8,
+            "observed_failure": 67
+          }
+        },
+        "2": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 66,
+              "finding_occurrence_count": 1215,
+              "trace_count": 393
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 49,
+              "finding_occurrence_count": 749,
+              "trace_count": 313
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 10,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "semantic_abort": 88,
+            "terminal_complete": 526,
+            "unalignable": 0
+          },
+          "game_count": 80,
+          "game_names": [
+            "amazons",
+            "antichess",
+            "backgammon",
+            "banqi",
+            "bargaining",
+            "battleship",
+            "blotto",
+            "breakthrough",
+            "bridge_uncontested_bidding",
+            "capture_the_flag",
+            "checkers",
+            "chess",
+            "chinese_checkers",
+            "clobber",
+            "coin_game",
+            "connect_four",
+            "coordinated_mp",
+            "crazyhouse",
+            "cribbage",
+            "cursor_go",
+            "dark_chess",
+            "dark_hex",
+            "dark_hex_ir",
+            "dots_and_boxes",
+            "einstein_wurfelt_nicht",
+            "first_sealed_auction",
+            "gin_rummy",
+            "go_fish",
+            "gomoku",
+            "goofspiel",
+            "hanabi",
+            "havannah",
+            "hex",
+            "hive",
+            "kriegspiel",
+            "laser_tag",
+            "latent_ttt",
+            "leduc_poker",
+            "lewis_signaling",
+            "liars_dice",
+            "liars_dice_ir",
+            "lines_of_action",
+            "maedn",
+            "mancala",
+            "markov_soccer",
+            "matrix_bos",
+            "matrix_brps",
+            "matrix_cd",
+            "matrix_coordination",
+            "matrix_mp",
+            "matrix_pd",
+            "matrix_rpsw",
+            "matrix_sh",
+            "matrix_shapleys_game",
+            "mnk",
+            "negotiation",
+            "nine_mens_morris",
+            "oshi_zumo",
+            "othello",
+            "oware",
+            "pentago",
+            "phantom_go",
+            "phantom_ttt",
+            "phantom_ttt_ir",
+            "pig",
+            "quoridor",
+            "rbc",
+            "repeated_leduc_poker",
+            "sheriff",
+            "shogi",
+            "snake",
+            "tiny_bridge_2p",
+            "tiny_hanabi",
+            "trade_comm",
+            "twixt",
+            "ultimate_tic_tac_toe",
+            "universal_poker",
+            "xiangqi",
+            "y",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 77,
+            "finding_occurrence_count": 1964,
+            "game_denominator": 80,
+            "trace_count": 558,
+            "trace_denominator": 640
+          },
+          "primary_status_counts": {
+            "fail": 558,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "pass": 66,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 640,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 66,
+            "no_verdict": 16,
+            "observed_failure": 558
+          }
+        },
+        "3": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 115,
+              "trace_count": 23
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 4,
+              "finding_occurrence_count": 80,
+              "trace_count": 25
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "semantic_abort": 15,
+            "terminal_complete": 25,
+            "unalignable": 0
+          },
+          "game_count": 6,
+          "game_names": [
+            "colored_trails",
+            "dou_dizhu",
+            "matching_pennies_3p",
+            "oh_hell",
+            "skat",
+            "tarok"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 5,
+            "finding_occurrence_count": 195,
+            "game_denominator": 6,
+            "trace_count": 39,
+            "trace_denominator": 48
+          },
+          "primary_status_counts": {
+            "fail": 39,
+            "inapplicable": 8,
+            "infrastructure": 0,
+            "pass": 1,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 48,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 1,
+            "no_verdict": 8,
+            "observed_failure": 39
+          }
+        },
+        "4": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 2,
+              "finding_occurrence_count": 98,
+              "trace_count": 14
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 96,
+              "trace_count": 24
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "semantic_abort": 24,
+            "terminal_complete": 16,
+            "unalignable": 0
+          },
+          "game_count": 5,
+          "game_names": [
+            "bridge",
+            "euchre",
+            "hearts",
+            "spades",
+            "tiny_bridge_4p"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 5,
+            "finding_occurrence_count": 194,
+            "game_denominator": 5,
+            "trace_count": 38,
+            "trace_denominator": 40
+          },
+          "primary_status_counts": {
+            "fail": 38,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "pass": 2,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 40,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 2,
+            "no_verdict": 0,
+            "observed_failure": 38
+          }
+        },
+        "5": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 1,
+              "finding_occurrence_count": 67,
+              "trace_count": 8
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 1,
+              "finding_occurrence_count": 8,
+              "trace_count": 8
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "semantic_abort": 0,
+            "terminal_complete": 8,
+            "unalignable": 0
+          },
+          "game_count": 1,
+          "game_names": [
+            "crazy_eights"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 75,
+            "game_denominator": 1,
+            "trace_count": 8,
+            "trace_denominator": 8
+          },
+          "primary_status_counts": {
+            "fail": 8,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "pass": 0,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 8,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 0,
+            "no_verdict": 0,
+            "observed_failure": 8
+          }
+        },
+        "6": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 1,
+              "finding_occurrence_count": 88,
+              "trace_count": 8
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 1,
+              "finding_occurrence_count": 7,
+              "trace_count": 7
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "semantic_abort": 0,
+            "terminal_complete": 8,
+            "unalignable": 0
+          },
+          "game_count": 1,
+          "game_names": [
+            "social_deduction"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 95,
+            "game_denominator": 1,
+            "trace_count": 8,
+            "trace_denominator": 8
+          },
+          "primary_status_counts": {
+            "fail": 8,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "pass": 0,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 8,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 0,
+            "no_verdict": 0,
+            "observed_failure": 8
+          }
+        }
+      },
+      "definition": "Effective player count returned by default native construction (census num_players)."
+    },
+    "finite_declared_max_game_length": {
+      "categories": {
+        "finite_positive": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 73,
+              "finding_occurrence_count": 1583,
+              "trace_count": 446
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 65,
+              "finding_occurrence_count": 1018,
+              "trace_count": 420
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 10,
+            "inapplicable": 32,
+            "infrastructure": 0,
+            "semantic_abort": 151,
+            "terminal_complete": 647,
+            "unalignable": 0
+          },
+          "game_count": 105,
+          "game_names": [
+            "2048",
+            "amazons",
+            "antichess",
+            "backgammon",
+            "banqi",
+            "bargaining",
+            "battleship",
+            "blackjack",
+            "blotto",
+            "breakthrough",
+            "bridge",
+            "bridge_uncontested_bidding",
+            "capture_the_flag",
+            "catch",
+            "checkers",
+            "chess",
+            "chinese_checkers",
+            "cliff_walking",
+            "clobber",
+            "coin_game",
+            "colored_trails",
+            "connect_four",
+            "coordinated_mp",
+            "crazy_eights",
+            "crazyhouse",
+            "cribbage",
+            "cursor_go",
+            "dark_chess",
+            "dark_hex",
+            "dark_hex_ir",
+            "deep_sea",
+            "dots_and_boxes",
+            "dou_dizhu",
+            "einstein_wurfelt_nicht",
+            "euchre",
+            "first_sealed_auction",
+            "gin_rummy",
+            "go_fish",
+            "gomoku",
+            "goofspiel",
+            "hanabi",
+            "havannah",
+            "hearts",
+            "hex",
+            "hive",
+            "kriegspiel",
+            "laser_tag",
+            "latent_ttt",
+            "leduc_poker",
+            "lewis_signaling",
+            "liars_dice",
+            "liars_dice_ir",
+            "lines_of_action",
+            "maedn",
+            "mancala",
+            "markov_soccer",
+            "matching_pennies_3p",
+            "matrix_bos",
+            "matrix_brps",
+            "matrix_cd",
+            "matrix_coordination",
+            "matrix_mp",
+            "matrix_pd",
+            "matrix_rpsw",
+            "matrix_sh",
+            "matrix_shapleys_game",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "mnk",
+            "morpion_solitaire",
+            "negotiation",
+            "nine_mens_morris",
+            "oh_hell",
+            "oshi_zumo",
+            "othello",
+            "oware",
+            "pathfinding",
+            "pentago",
+            "phantom_go",
+            "phantom_ttt",
+            "phantom_ttt_ir",
+            "pig",
+            "quoridor",
+            "rbc",
+            "repeated_leduc_poker",
+            "sheriff",
+            "shogi",
+            "skat",
+            "snake",
+            "social_deduction",
+            "solitaire",
+            "spades",
+            "stones_and_gems",
+            "tarok",
+            "tiny_bridge_2p",
+            "tiny_bridge_4p",
+            "tiny_hanabi",
+            "trade_comm",
+            "twixt",
+            "ultimate_tic_tac_toe",
+            "universal_poker",
+            "xiangqi",
+            "y",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 99,
+            "finding_occurrence_count": 2737,
+            "game_denominator": 105,
+            "trace_count": 718,
+            "trace_denominator": 840
+          },
+          "primary_status_counts": {
+            "fail": 718,
+            "inapplicable": 32,
+            "infrastructure": 0,
+            "pass": 90,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 840,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 90,
+            "no_verdict": 32,
+            "observed_failure": 718
+          }
+        }
+      },
+      "definition": "A finite-length declaration is operationalized as an integer max_game_length greater than zero in the census."
+    },
+    "presence_of_configurable_parameters": {
+      "categories": {
+        "empty_parameter_mapping": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 19,
+              "finding_occurrence_count": 400,
+              "trace_count": 114
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 15,
+              "finding_occurrence_count": 258,
+              "trace_count": 118
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 2,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "semantic_abort": 15,
+            "terminal_complete": 175,
+            "unalignable": 0
+          },
+          "game_count": 24,
+          "game_names": [
+            "blackjack",
+            "coordinated_mp",
+            "dou_dizhu",
+            "einstein_wurfelt_nicht",
+            "latent_ttt",
+            "mancala",
+            "matching_pennies_3p",
+            "matrix_bos",
+            "matrix_brps",
+            "matrix_cd",
+            "matrix_coordination",
+            "matrix_mp",
+            "matrix_pd",
+            "matrix_rpsw",
+            "matrix_sh",
+            "matrix_shapleys_game",
+            "morpion_solitaire",
+            "nine_mens_morris",
+            "othello",
+            "shogi",
+            "skat",
+            "tiny_bridge_4p",
+            "ultimate_tic_tac_toe",
+            "xiangqi"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 23,
+            "finding_occurrence_count": 658,
+            "game_denominator": 24,
+            "trace_count": 172,
+            "trace_denominator": 192
+          },
+          "primary_status_counts": {
+            "fail": 172,
+            "inapplicable": 0,
+            "infrastructure": 0,
+            "pass": 20,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 192,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 20,
+            "no_verdict": 0,
+            "observed_failure": 172
+          }
+        },
+        "nonempty_parameter_mapping": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 54,
+              "finding_occurrence_count": 1183,
+              "trace_count": 332
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 50,
+              "finding_occurrence_count": 760,
+              "trace_count": 302
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 8,
+            "inapplicable": 32,
+            "infrastructure": 0,
+            "semantic_abort": 136,
+            "terminal_complete": 472,
+            "unalignable": 0
+          },
+          "game_count": 81,
+          "game_names": [
+            "2048",
+            "amazons",
+            "antichess",
+            "backgammon",
+            "banqi",
+            "bargaining",
+            "battleship",
+            "blotto",
+            "breakthrough",
+            "bridge",
+            "bridge_uncontested_bidding",
+            "capture_the_flag",
+            "catch",
+            "checkers",
+            "chess",
+            "chinese_checkers",
+            "cliff_walking",
+            "clobber",
+            "coin_game",
+            "colored_trails",
+            "connect_four",
+            "crazy_eights",
+            "crazyhouse",
+            "cribbage",
+            "cursor_go",
+            "dark_chess",
+            "dark_hex",
+            "dark_hex_ir",
+            "deep_sea",
+            "dots_and_boxes",
+            "euchre",
+            "first_sealed_auction",
+            "gin_rummy",
+            "go_fish",
+            "gomoku",
+            "goofspiel",
+            "hanabi",
+            "havannah",
+            "hearts",
+            "hex",
+            "hive",
+            "kriegspiel",
+            "laser_tag",
+            "leduc_poker",
+            "lewis_signaling",
+            "liars_dice",
+            "liars_dice_ir",
+            "lines_of_action",
+            "maedn",
+            "markov_soccer",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "mnk",
+            "negotiation",
+            "oh_hell",
+            "oshi_zumo",
+            "oware",
+            "pathfinding",
+            "pentago",
+            "phantom_go",
+            "phantom_ttt",
+            "phantom_ttt_ir",
+            "pig",
+            "quoridor",
+            "rbc",
+            "repeated_leduc_poker",
+            "sheriff",
+            "snake",
+            "social_deduction",
+            "solitaire",
+            "spades",
+            "stones_and_gems",
+            "tarok",
+            "tiny_bridge_2p",
+            "tiny_hanabi",
+            "trade_comm",
+            "twixt",
+            "universal_poker",
+            "y",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 76,
+            "finding_occurrence_count": 2079,
+            "game_denominator": 81,
+            "trace_count": 546,
+            "trace_denominator": 648
+          },
+          "primary_status_counts": {
+            "fail": 546,
+            "inapplicable": 32,
+            "infrastructure": 0,
+            "pass": 70,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 648,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 70,
+            "no_verdict": 32,
+            "observed_failure": 546
+          }
+        }
+      },
+      "definition": "Operationalized as a nonempty census parameters mapping; this does not claim every listed default is freely user-tunable."
+    },
+    "provides_information_state": {
+      "categories": {
+        "false": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 19,
+              "finding_occurrence_count": 444,
+              "trace_count": 117
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 21,
+              "finding_occurrence_count": 329,
+              "trace_count": 149
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 8,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "semantic_abort": 45,
+            "terminal_complete": 187,
+            "unalignable": 0
+          },
+          "game_count": 32,
+          "game_names": [
+            "2048",
+            "backgammon",
+            "banqi",
+            "breakthrough",
+            "capture_the_flag",
+            "catch",
+            "chinese_checkers",
+            "coin_game",
+            "crazy_eights",
+            "dark_chess",
+            "deep_sea",
+            "dou_dizhu",
+            "einstein_wurfelt_nicht",
+            "gin_rummy",
+            "hanabi",
+            "laser_tag",
+            "lines_of_action",
+            "maedn",
+            "mancala",
+            "markov_soccer",
+            "morpion_solitaire",
+            "negotiation",
+            "oware",
+            "pathfinding",
+            "phantom_go",
+            "pig",
+            "rbc",
+            "skat",
+            "snake",
+            "spades",
+            "stones_and_gems",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 28,
+            "finding_occurrence_count": 773,
+            "game_denominator": 32,
+            "trace_count": 199,
+            "trace_denominator": 256
+          },
+          "primary_status_counts": {
+            "fail": 199,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "pass": 41,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 256,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 41,
+            "no_verdict": 16,
+            "observed_failure": 199
+          }
+        },
+        "true": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 54,
+              "finding_occurrence_count": 1139,
+              "trace_count": 329
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 44,
+              "finding_occurrence_count": 689,
+              "trace_count": 271
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 2,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "semantic_abort": 106,
+            "terminal_complete": 460,
+            "unalignable": 0
+          },
+          "game_count": 73,
+          "game_names": [
+            "amazons",
+            "antichess",
+            "bargaining",
+            "battleship",
+            "blackjack",
+            "blotto",
+            "bridge",
+            "bridge_uncontested_bidding",
+            "checkers",
+            "chess",
+            "cliff_walking",
+            "clobber",
+            "colored_trails",
+            "connect_four",
+            "coordinated_mp",
+            "crazyhouse",
+            "cribbage",
+            "cursor_go",
+            "dark_hex",
+            "dark_hex_ir",
+            "dots_and_boxes",
+            "euchre",
+            "first_sealed_auction",
+            "go_fish",
+            "gomoku",
+            "goofspiel",
+            "havannah",
+            "hearts",
+            "hex",
+            "hive",
+            "kriegspiel",
+            "latent_ttt",
+            "leduc_poker",
+            "lewis_signaling",
+            "liars_dice",
+            "liars_dice_ir",
+            "matching_pennies_3p",
+            "matrix_bos",
+            "matrix_brps",
+            "matrix_cd",
+            "matrix_coordination",
+            "matrix_mp",
+            "matrix_pd",
+            "matrix_rpsw",
+            "matrix_sh",
+            "matrix_shapleys_game",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "mnk",
+            "nine_mens_morris",
+            "oh_hell",
+            "oshi_zumo",
+            "othello",
+            "pentago",
+            "phantom_ttt",
+            "phantom_ttt_ir",
+            "quoridor",
+            "repeated_leduc_poker",
+            "sheriff",
+            "shogi",
+            "social_deduction",
+            "solitaire",
+            "tarok",
+            "tiny_bridge_2p",
+            "tiny_bridge_4p",
+            "tiny_hanabi",
+            "trade_comm",
+            "twixt",
+            "ultimate_tic_tac_toe",
+            "universal_poker",
+            "xiangqi",
+            "y"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 71,
+            "finding_occurrence_count": 1964,
+            "game_denominator": 73,
+            "trace_count": 519,
+            "trace_denominator": 584
+          },
+          "primary_status_counts": {
+            "fail": 519,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "pass": 49,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 584,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 49,
+            "no_verdict": 16,
+            "observed_failure": 519
+          }
+        }
+      },
+      "definition": "Declared information-state-tensor capability recorded in the census."
+    },
+    "provides_observation": {
+      "categories": {
+        "false": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 0,
+              "finding_occurrence_count": 0,
+              "trace_count": 0
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 4,
+              "finding_occurrence_count": 100,
+              "trace_count": 28
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 4,
+              "finding_occurrence_count": 54,
+              "trace_count": 18
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 0,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "semantic_abort": 9,
+            "terminal_complete": 31,
+            "unalignable": 0
+          },
+          "game_count": 7,
+          "game_names": [
+            "bridge_uncontested_bidding",
+            "hearts",
+            "liars_dice_ir",
+            "oh_hell",
+            "phantom_ttt_ir",
+            "sheriff",
+            "tarok"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 5,
+            "finding_occurrence_count": 154,
+            "game_denominator": 7,
+            "trace_count": 38,
+            "trace_denominator": 56
+          },
+          "primary_status_counts": {
+            "fail": 38,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "pass": 2,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 56,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 2,
+            "no_verdict": 16,
+            "observed_failure": 38
+          }
+        },
+        "true": {
+          "adjudicated_causal_root_incidence": {
+            "mean-field-capability-boundary": {
+              "distinct_game_count": 3,
+              "finding_occurrence_count": 136,
+              "trace_count": 24
+            },
+            "reward-accounting-replay": {
+              "distinct_game_count": 69,
+              "finding_occurrence_count": 1483,
+              "trace_count": 418
+            },
+            "source-decision-clock": {
+              "distinct_game_count": 61,
+              "finding_occurrence_count": 964,
+              "trace_count": 402
+            }
+          },
+          "execution_completeness_counts": {
+            "bounded_prefix": 10,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "semantic_abort": 142,
+            "terminal_complete": 616,
+            "unalignable": 0
+          },
+          "game_count": 98,
+          "game_names": [
+            "2048",
+            "amazons",
+            "antichess",
+            "backgammon",
+            "banqi",
+            "bargaining",
+            "battleship",
+            "blackjack",
+            "blotto",
+            "breakthrough",
+            "bridge",
+            "capture_the_flag",
+            "catch",
+            "checkers",
+            "chess",
+            "chinese_checkers",
+            "cliff_walking",
+            "clobber",
+            "coin_game",
+            "colored_trails",
+            "connect_four",
+            "coordinated_mp",
+            "crazy_eights",
+            "crazyhouse",
+            "cribbage",
+            "cursor_go",
+            "dark_chess",
+            "dark_hex",
+            "dark_hex_ir",
+            "deep_sea",
+            "dots_and_boxes",
+            "dou_dizhu",
+            "einstein_wurfelt_nicht",
+            "euchre",
+            "first_sealed_auction",
+            "gin_rummy",
+            "go_fish",
+            "gomoku",
+            "goofspiel",
+            "hanabi",
+            "havannah",
+            "hex",
+            "hive",
+            "kriegspiel",
+            "laser_tag",
+            "latent_ttt",
+            "leduc_poker",
+            "lewis_signaling",
+            "liars_dice",
+            "lines_of_action",
+            "maedn",
+            "mancala",
+            "markov_soccer",
+            "matching_pennies_3p",
+            "matrix_bos",
+            "matrix_brps",
+            "matrix_cd",
+            "matrix_coordination",
+            "matrix_mp",
+            "matrix_pd",
+            "matrix_rpsw",
+            "matrix_sh",
+            "matrix_shapleys_game",
+            "mfg_crowd_modelling_2d",
+            "mfg_dynamic_routing",
+            "mfg_garnet",
+            "mnk",
+            "morpion_solitaire",
+            "negotiation",
+            "nine_mens_morris",
+            "oshi_zumo",
+            "othello",
+            "oware",
+            "pathfinding",
+            "pentago",
+            "phantom_go",
+            "phantom_ttt",
+            "pig",
+            "quoridor",
+            "rbc",
+            "repeated_leduc_poker",
+            "shogi",
+            "skat",
+            "snake",
+            "social_deduction",
+            "solitaire",
+            "spades",
+            "stones_and_gems",
+            "tiny_bridge_2p",
+            "tiny_bridge_4p",
+            "tiny_hanabi",
+            "trade_comm",
+            "twixt",
+            "ultimate_tic_tac_toe",
+            "universal_poker",
+            "xiangqi",
+            "y",
+            "yacht"
+          ],
+          "observed_semantic_finding_incidence": {
+            "distinct_game_count": 94,
+            "finding_occurrence_count": 2583,
+            "game_denominator": 98,
+            "trace_count": 680,
+            "trace_denominator": 784
+          },
+          "primary_status_counts": {
+            "fail": 680,
+            "inapplicable": 16,
+            "infrastructure": 0,
+            "pass": 88,
+            "unalignable": 0
+          },
+          "scheduled_trace_count": 784,
+          "semantic_evidence_counts": {
+            "no_observed_failure": 88,
+            "no_verdict": 16,
+            "observed_failure": 680
+          }
+        }
+      },
+      "definition": "Declared observation-tensor capability recorded in the census."
+    }
+  },
+  "single_player_subgroup": {
+    "adjudicated_causal_root_incidence": {
+      "mean-field-capability-boundary": {
+        "distinct_game_count": 3,
+        "finding_occurrence_count": 136,
+        "trace_count": 24
+      },
+      "reward-accounting-replay": {
+        "distinct_game_count": 0,
+        "finding_occurrence_count": 0,
+        "trace_count": 0
+      },
+      "source-decision-clock": {
+        "distinct_game_count": 7,
+        "finding_occurrence_count": 78,
+        "trace_count": 43
+      }
+    },
+    "claim_boundary": {
+      "configuration_preservation": "not prospectively evaluated because the primary cohort is default-configuration only",
+      "does_not_support": "claims specifically about inter-agent buffering or multi-agent schedules",
+      "supports": "generic reward, lifecycle, clock, state-kind, and interface-projection observations"
+    },
+    "execution_completeness_counts": {
+      "bounded_prefix": 0,
+      "inapplicable": 8,
+      "infrastructure": 0,
+      "semantic_abort": 24,
+      "terminal_complete": 64,
+      "unalignable": 0
+    },
+    "game_count": 12,
+    "game_names": [
+      "2048",
+      "blackjack",
+      "catch",
+      "cliff_walking",
+      "deep_sea",
+      "mfg_crowd_modelling_2d",
+      "mfg_dynamic_routing",
+      "mfg_garnet",
+      "morpion_solitaire",
+      "pathfinding",
+      "solitaire",
+      "stones_and_gems"
+    ],
+    "obligation_evaluation_coverage": {
+      "O1": {
+        "evaluation_site_count": 0,
+        "linked_semantic_finding_distinct_game_count": 0,
+        "linked_semantic_finding_occurrence_count": 0,
+        "linked_semantic_finding_trace_count": 0,
+        "trace_outcome_counts": {
+          "evaluated_fail": 0,
+          "evaluated_pass": 0,
+          "not_applicable": 96,
+          "not_evaluated": 0
+        }
+      },
+      "O2": {
+        "evaluation_site_count": 88,
+        "linked_semantic_finding_distinct_game_count": 0,
+        "linked_semantic_finding_occurrence_count": 0,
+        "linked_semantic_finding_trace_count": 0,
+        "trace_outcome_counts": {
+          "evaluated_fail": 0,
+          "evaluated_pass": 88,
+          "not_applicable": 8,
+          "not_evaluated": 0
+        }
+      },
+      "O3": {
+        "evaluation_site_count": 6623,
+        "linked_semantic_finding_distinct_game_count": 0,
+        "linked_semantic_finding_occurrence_count": 0,
+        "linked_semantic_finding_trace_count": 0,
+        "trace_outcome_counts": {
+          "evaluated_fail": 0,
+          "evaluated_pass": 88,
+          "not_applicable": 8,
+          "not_evaluated": 0
+        }
+      },
+      "O4": {
+        "evaluation_site_count": 6647,
+        "linked_semantic_finding_distinct_game_count": 5,
+        "linked_semantic_finding_occurrence_count": 40,
+        "linked_semantic_finding_trace_count": 40,
+        "trace_outcome_counts": {
+          "evaluated_fail": 40,
+          "evaluated_pass": 48,
+          "not_applicable": 8,
+          "not_evaluated": 0
+        }
+      },
+      "O5": {
+        "evaluation_site_count": 6647,
+        "linked_semantic_finding_distinct_game_count": 8,
+        "linked_semantic_finding_occurrence_count": 150,
+        "linked_semantic_finding_trace_count": 51,
+        "trace_outcome_counts": {
+          "evaluated_fail": 51,
+          "evaluated_pass": 37,
+          "not_applicable": 8,
+          "not_evaluated": 0
+        }
+      },
+      "O6": {
+        "evaluation_site_count": 0,
+        "linked_semantic_finding_distinct_game_count": 0,
+        "linked_semantic_finding_occurrence_count": 0,
+        "linked_semantic_finding_trace_count": 0,
+        "trace_outcome_counts": {
+          "evaluated_fail": 0,
+          "evaluated_pass": 0,
+          "not_applicable": 96,
+          "not_evaluated": 0
+        }
+      },
+      "O7": {
+        "evaluation_site_count": 7783,
+        "linked_semantic_finding_distinct_game_count": 3,
+        "linked_semantic_finding_occurrence_count": 24,
+        "linked_semantic_finding_trace_count": 24,
+        "trace_outcome_counts": {
+          "evaluated_fail": 24,
+          "evaluated_pass": 64,
+          "not_applicable": 8,
+          "not_evaluated": 0
+        }
+      },
+      "O8": {
+        "evaluation_site_count": 6559,
+        "linked_semantic_finding_distinct_game_count": 0,
+        "linked_semantic_finding_occurrence_count": 0,
+        "linked_semantic_finding_trace_count": 0,
+        "trace_outcome_counts": {
+          "evaluated_fail": 0,
+          "evaluated_pass": 88,
+          "not_applicable": 8,
+          "not_evaluated": 0
+        }
+      }
+    },
+    "observed_semantic_finding_incidence": {
+      "distinct_game_count": 10,
+      "finding_occurrence_count": 214,
+      "game_denominator": 12,
+      "trace_count": 67,
+      "trace_denominator": 96
+    },
+    "per_game": {
+      "2048": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 8,
+            "trace_count": 8
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 8,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "2048"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 8,
+          "game_denominator": 1,
+          "trace_count": 8,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 8,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 0,
+          "observed_failure": 8
+        }
+      },
+      "blackjack": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 8,
+            "trace_count": 8
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 8,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "blackjack"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 8,
+          "game_denominator": 1,
+          "trace_count": 8,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 8,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 0,
+          "observed_failure": 8
+        }
+      },
+      "catch": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 16,
+            "trace_count": 8
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 8,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "catch"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 16,
+          "game_denominator": 1,
+          "trace_count": 8,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 8,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 0,
+          "observed_failure": 8
+        }
+      },
+      "cliff_walking": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 2,
+            "trace_count": 1
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 8,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "cliff_walking"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 2,
+          "game_denominator": 1,
+          "trace_count": 1,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 1,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 7,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 7,
+          "no_verdict": 0,
+          "observed_failure": 1
+        }
+      },
+      "deep_sea": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 16,
+            "trace_count": 8
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 8,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "deep_sea"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 16,
+          "game_denominator": 1,
+          "trace_count": 8,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 8,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 0,
+          "observed_failure": 8
+        }
+      },
+      "mfg_crowd_modelling_2d": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 48,
+            "trace_count": 8
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 8,
+          "terminal_complete": 0,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "mfg_crowd_modelling_2d"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 48,
+          "game_denominator": 1,
+          "trace_count": 8,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 8,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 0,
+          "observed_failure": 8
+        }
+      },
+      "mfg_dynamic_routing": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 40,
+            "trace_count": 8
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 8,
+          "terminal_complete": 0,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "mfg_dynamic_routing"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 40,
+          "game_denominator": 1,
+          "trace_count": 8,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 8,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 0,
+          "observed_failure": 8
+        }
+      },
+      "mfg_garnet": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 48,
+            "trace_count": 8
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 8,
+          "terminal_complete": 0,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "mfg_garnet"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 48,
+          "game_denominator": 1,
+          "trace_count": 8,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 8,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 0,
+          "observed_failure": 8
+        }
+      },
+      "morpion_solitaire": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 8,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "morpion_solitaire"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 0,
+          "finding_occurrence_count": 0,
+          "game_denominator": 1,
+          "trace_count": 0,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 8,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 8,
+          "no_verdict": 0,
+          "observed_failure": 0
+        }
+      },
+      "pathfinding": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 4,
+            "trace_count": 2
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 8,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "pathfinding"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 4,
+          "game_denominator": 1,
+          "trace_count": 2,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 2,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 6,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 6,
+          "no_verdict": 0,
+          "observed_failure": 2
+        }
+      },
+      "solitaire": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 1,
+            "finding_occurrence_count": 24,
+            "trace_count": 8
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 8,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "solitaire"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 1,
+          "finding_occurrence_count": 24,
+          "game_denominator": 1,
+          "trace_count": 8,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 8,
+          "inapplicable": 0,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 0,
+          "observed_failure": 8
+        }
+      },
+      "stones_and_gems": {
+        "adjudicated_causal_root_incidence": {
+          "mean-field-capability-boundary": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "reward-accounting-replay": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          },
+          "source-decision-clock": {
+            "distinct_game_count": 0,
+            "finding_occurrence_count": 0,
+            "trace_count": 0
+          }
+        },
+        "execution_completeness_counts": {
+          "bounded_prefix": 0,
+          "inapplicable": 8,
+          "infrastructure": 0,
+          "semantic_abort": 0,
+          "terminal_complete": 0,
+          "unalignable": 0
+        },
+        "game_count": 1,
+        "game_names": [
+          "stones_and_gems"
+        ],
+        "observed_semantic_finding_incidence": {
+          "distinct_game_count": 0,
+          "finding_occurrence_count": 0,
+          "game_denominator": 1,
+          "trace_count": 0,
+          "trace_denominator": 8
+        },
+        "primary_status_counts": {
+          "fail": 0,
+          "inapplicable": 8,
+          "infrastructure": 0,
+          "pass": 0,
+          "unalignable": 0
+        },
+        "scheduled_trace_count": 8,
+        "semantic_evidence_counts": {
+          "no_observed_failure": 0,
+          "no_verdict": 8,
+          "observed_failure": 0
+        }
+      }
+    },
+    "primary_status_counts": {
+      "fail": 67,
+      "inapplicable": 8,
+      "infrastructure": 0,
+      "pass": 21,
+      "unalignable": 0
+    },
+    "registry_names_outside_prospective_cohort": {
+      "crossword": "prespecified_descriptive_exclusion",
+      "mfg_crowd_modelling": "discovery_or_implementation_control"
+    },
+    "registry_single_player_count": 14,
+    "registry_single_player_names": [
+      "2048",
+      "blackjack",
+      "catch",
+      "cliff_walking",
+      "crossword",
+      "deep_sea",
+      "mfg_crowd_modelling",
+      "mfg_crowd_modelling_2d",
+      "mfg_dynamic_routing",
+      "mfg_garnet",
+      "morpion_solitaire",
+      "pathfinding",
+      "solitaire",
+      "stones_and_gems"
+    ],
+    "scheduled_trace_count": 96,
+    "semantic_evidence_counts": {
+      "no_observed_failure": 21,
+      "no_verdict": 8,
+      "observed_failure": 67
+    },
+    "semantic_violations_by_code": {
+      "agents_exhausted_before_source_terminal": {
+        "distinct_game_count": 3,
+        "finding_occurrence_count": 24,
+        "trace_count": 24
+      },
+      "boundary_lifecycle_mismatch": {
+        "distinct_game_count": 8,
+        "finding_occurrence_count": 51,
+        "trace_count": 51
+      },
+      "mean_field_node_silently_terminated": {
+        "distinct_game_count": 3,
+        "finding_occurrence_count": 24,
+        "trace_count": 24
+      },
+      "pre_cleanup_lifecycle_mismatch": {
+        "distinct_game_count": 8,
+        "finding_occurrence_count": 51,
+        "trace_count": 51
+      },
+      "source_decision_clock_mismatch": {
+        "distinct_game_count": 5,
+        "finding_occurrence_count": 40,
+        "trace_count": 40
+      },
+      "terminality_mismatch": {
+        "distinct_game_count": 3,
+        "finding_occurrence_count": 24,
+        "trace_count": 24
+      }
+    },
+    "semantic_violations_by_protocol_obligation": {
+      "boundary_lifecycle_preservation": {
+        "distinct_game_count": 8,
+        "finding_occurrence_count": 51,
+        "trace_count": 51
+      },
+      "decision_clock_preservation": {
+        "distinct_game_count": 5,
+        "finding_occurrence_count": 40,
+        "trace_count": 40
+      },
+      "lifecycle_preservation": {
+        "distinct_game_count": 8,
+        "finding_occurrence_count": 99,
+        "trace_count": 51
+      },
+      "state_kind_soundness": {
+        "distinct_game_count": 3,
+        "finding_occurrence_count": 24,
+        "trace_count": 24
+      }
+    }
+  },
+  "suggested_manuscript_language": {
+    "interpretive_boundary": "The single-player traces inform generic reward, lifecycle, clock, state-kind, and projection behavior. They are not evidence for claims specifically about inter-agent buffering or multi-agent schedules, and the default-only prospective cohort does not test preservation of caller-supplied nondefault configuration.",
+    "recovery_disclosure": "The protocol prespecified primary-stratum status and finding incidence, final source-node reachability, and descriptive reporting by player count, chance and reward mode, information and utility type, declared tensor capabilities, finite-length status, and parameterization. The initial manuscript omitted part of this reporting. We recovered it after the primary analysis by a deterministic join of the frozen census, raw ledger, and frozen analysis; no cohort, trace, outcome, or adjudication changed.",
+    "single_player_result": "Twelve of the 105 prospective game types had an effective num_players() of one, contributing 96 of 840 scheduled traces. A semantic finding was observed in 67 of 96 traces across 10 of 12 games; 21 traces had no observed finding and 8 had no verdict. The subgroup contained findings attributed by the final adjudication to 2 causal roots (mean-field-capability-boundary, source-decision-clock)."
+  },
+  "two_or_more_player_complement": {
+    "adjudicated_causal_root_incidence": {
+      "mean-field-capability-boundary": {
+        "distinct_game_count": 0,
+        "finding_occurrence_count": 0,
+        "trace_count": 0
+      },
+      "reward-accounting-replay": {
+        "distinct_game_count": 73,
+        "finding_occurrence_count": 1583,
+        "trace_count": 446
+      },
+      "source-decision-clock": {
+        "distinct_game_count": 58,
+        "finding_occurrence_count": 940,
+        "trace_count": 377
+      }
+    },
+    "execution_completeness_counts": {
+      "bounded_prefix": 10,
+      "inapplicable": 24,
+      "infrastructure": 0,
+      "semantic_abort": 127,
+      "terminal_complete": 583,
+      "unalignable": 0
+    },
+    "game_count": 93,
+    "game_names": [
+      "amazons",
+      "antichess",
+      "backgammon",
+      "banqi",
+      "bargaining",
+      "battleship",
+      "blotto",
+      "breakthrough",
+      "bridge",
+      "bridge_uncontested_bidding",
+      "capture_the_flag",
+      "checkers",
+      "chess",
+      "chinese_checkers",
+      "clobber",
+      "coin_game",
+      "colored_trails",
+      "connect_four",
+      "coordinated_mp",
+      "crazy_eights",
+      "crazyhouse",
+      "cribbage",
+      "cursor_go",
+      "dark_chess",
+      "dark_hex",
+      "dark_hex_ir",
+      "dots_and_boxes",
+      "dou_dizhu",
+      "einstein_wurfelt_nicht",
+      "euchre",
+      "first_sealed_auction",
+      "gin_rummy",
+      "go_fish",
+      "gomoku",
+      "goofspiel",
+      "hanabi",
+      "havannah",
+      "hearts",
+      "hex",
+      "hive",
+      "kriegspiel",
+      "laser_tag",
+      "latent_ttt",
+      "leduc_poker",
+      "lewis_signaling",
+      "liars_dice",
+      "liars_dice_ir",
+      "lines_of_action",
+      "maedn",
+      "mancala",
+      "markov_soccer",
+      "matching_pennies_3p",
+      "matrix_bos",
+      "matrix_brps",
+      "matrix_cd",
+      "matrix_coordination",
+      "matrix_mp",
+      "matrix_pd",
+      "matrix_rpsw",
+      "matrix_sh",
+      "matrix_shapleys_game",
+      "mnk",
+      "negotiation",
+      "nine_mens_morris",
+      "oh_hell",
+      "oshi_zumo",
+      "othello",
+      "oware",
+      "pentago",
+      "phantom_go",
+      "phantom_ttt",
+      "phantom_ttt_ir",
+      "pig",
+      "quoridor",
+      "rbc",
+      "repeated_leduc_poker",
+      "sheriff",
+      "shogi",
+      "skat",
+      "snake",
+      "social_deduction",
+      "spades",
+      "tarok",
+      "tiny_bridge_2p",
+      "tiny_bridge_4p",
+      "tiny_hanabi",
+      "trade_comm",
+      "twixt",
+      "ultimate_tic_tac_toe",
+      "universal_poker",
+      "xiangqi",
+      "y",
+      "yacht"
+    ],
+    "observed_semantic_finding_incidence": {
+      "distinct_game_count": 89,
+      "finding_occurrence_count": 2523,
+      "game_denominator": 93,
+      "trace_count": 651,
+      "trace_denominator": 744
+    },
+    "primary_status_counts": {
+      "fail": 651,
+      "inapplicable": 24,
+      "infrastructure": 0,
+      "pass": 69,
+      "unalignable": 0
+    },
+    "scheduled_trace_count": 744,
+    "semantic_evidence_counts": {
+      "no_observed_failure": 69,
+      "no_verdict": 24,
+      "observed_failure": 651
+    }
+  },
+  "validation": {
+    "every_secondary_dimension_partitions_105_games_and_840_traces": true,
+    "frozen_analysis_cross_checks": {
+      "analysis_manifest_sha256_matches": true,
+      "analysis_manual_adjudication_sha256_matches": true,
+      "analysis_raw_ledger_sha256_matches": true,
+      "final_source_boundary_kinds_rederived_exactly": true,
+      "primary_stratum_finding_occurrences_rederived_exactly": true,
+      "primary_stratum_statuses_rederived_exactly": true
+    },
+    "ledger_footer_case_count": 840,
+    "ledger_footer_status_counts": {
+      "fail": 718,
+      "inapplicable": 32,
+      "pass": 90
+    },
+    "ledger_header_case_count": 840,
+    "manual_adjudication_join": {
+      "disposition_counts": {
+        "root": 2737
+      },
+      "mapped_violation_count": 2737,
+      "unmapped_violation_count": 0
+    },
+    "protocol_lines_268_276_reporting_directives_found": true,
+    "registry_population_count": 113,
+    "runtime_num_players_matches_census_for_all_traces": true,
+    "scheduled_trace_count": 840,
+    "semantic_cohort_game_count": 105,
+    "trace_policies_per_game": 8
+  }
+}
