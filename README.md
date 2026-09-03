@@ -14,12 +14,12 @@ apply at each observed boundary.
 ## Study result in brief
 
 The completed bounded study covered 105 reserved OpenSpiel game types under
-eight fixed policies, for 840 traces. It recorded 90 passing traces, 718 traces
-with at least one detected violation, and 32 traces for which the adapter did
+eight fixed policies, for 840 traces. It recorded 90 traces with no detected
+violation, 718 traces with at least one detected violation, and 32 traces for which the adapter did
 not expose an applicable semantic execution. Causal adjudication grouped the
 2,737 emitted findings into three implementation-level roots: replayed rewards,
 source-decision-clock mismatch, and unsupported mean-field capability. A
-separately sealed mutation evaluation produced 19 semantic detections, four
+precommitted mutation evaluation produced 19 semantic detections, four
 crash-only detections, and one survivor among 24 selected mutants. The
 prespecified strong-sensitivity threshold of 20 semantic detections was not met.
 
@@ -74,7 +74,11 @@ it does not execute games or mutate the released evidence.
 The study used a clean local Git freeze and an explicit authorization artifact;
 it was not publicly preregistered. The corrected run is an integrity
 replication performed after aggregate statuses from the first attempt had been
-seen. The protocol and analysis preserve that chronology explicitly.
+seen. The fixed-order mutation cohort did not change, but validator output from
+the first attempt exposed the result for `mut-special-node-kind-02`; its rerun
+inference is therefore post-authorization validation evidence, not untouched
+prospective evidence. The protocol and analysis preserve that chronology
+explicitly.
 
 ## Licensing
 
